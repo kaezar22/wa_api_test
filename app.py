@@ -26,16 +26,15 @@ PRIVACY_HTML = """<!doctype html>
 <style>body{font-family:system-ui,sans-serif;max-width:720px;margin:40px auto;padding:0 16px;line-height:1.6;color:#222}</style>
 </head><body>
 <h1>Política de privacidad</h1>
-<p>Este servicio es un asistente de WhatsApp de Grupo Nutrienti S.A.S. (Colombia) que responde
-mensajes enviados por los usuarios a nuestro número de WhatsApp Business.</p>
-<h2>Datos que tratamos</h2>
-<p>Número de teléfono, nombre de perfil de WhatsApp y el contenido de los mensajes que nos envías.</p>
-<h2>Para qué los usamos</h2>
-<p>Únicamente para responder tus mensajes y gestionar tus solicitudes (pedidos, información de cuenta).
-No vendemos ni compartimos tus datos con terceros, salvo Meta Platforms como proveedor de WhatsApp.</p>
-<h2>Tus derechos</h2>
-<p>De acuerdo con la Ley 1581 de 2012, puedes conocer, actualizar, rectificar o pedir la eliminación de
-tus datos escribiendo a contacto@nutrienti.co.</p>
+<p>Este es un proyecto de prueba de un chatbot de WhatsApp, usado solo para probar el envío y la
+recepción de mensajes con la WhatsApp Cloud API.</p>
+<h2>Datos que se tratan</h2>
+<p>Número de teléfono, nombre de perfil de WhatsApp y el contenido de los mensajes enviados al número de prueba.</p>
+<h2>Uso</h2>
+<p>Los datos se usan únicamente para responder los mensajes de prueba. No se venden ni se comparten con
+terceros, salvo Meta Platforms como proveedor de WhatsApp.</p>
+<h2>Eliminación</h2>
+<p>Puedes pedir la eliminación de tus datos respondiendo por WhatsApp al mismo número.</p>
 </body></html>"""
 
 
