@@ -19,6 +19,31 @@ def index():
     return "Welcome developer"
 
 
+PRIVACY_HTML = """<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad</title>
+<style>body{font-family:system-ui,sans-serif;max-width:720px;margin:40px auto;padding:0 16px;line-height:1.6;color:#222}</style>
+</head><body>
+<h1>Política de privacidad</h1>
+<p>Este servicio es un asistente de WhatsApp de Grupo Nutrienti S.A.S. (Colombia) que responde
+mensajes enviados por los usuarios a nuestro número de WhatsApp Business.</p>
+<h2>Datos que tratamos</h2>
+<p>Número de teléfono, nombre de perfil de WhatsApp y el contenido de los mensajes que nos envías.</p>
+<h2>Para qué los usamos</h2>
+<p>Únicamente para responder tus mensajes y gestionar tus solicitudes (pedidos, información de cuenta).
+No vendemos ni compartimos tus datos con terceros, salvo Meta Platforms como proveedor de WhatsApp.</p>
+<h2>Tus derechos</h2>
+<p>De acuerdo con la Ley 1581 de 2012, puedes conocer, actualizar, rectificar o pedir la eliminación de
+tus datos escribiendo a contacto@nutrienti.co.</p>
+</body></html>"""
+
+
+@app.route('/privacy', methods=['GET'])
+def privacy():
+    return PRIVACY_HTML
+
+
 @app.route('/whatsapp', methods=['GET'])
 def VerifyToken():
     try:
