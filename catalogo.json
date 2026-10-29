@@ -1,0 +1,27 @@
+{
+  "_nota": "CATÁLOGO DE EJEMPLO para pruebas. Reemplazar con productos y precios reales antes de usar con clientes.",
+  "moneda": "COP",
+  "pedido_minimo": 50000,
+  "costo_domicilio": 8000,
+  "domicilio_gratis_desde": 150000,
+  "entrega": {
+    "hora_corte": 14,
+    "dias_si_antes_del_corte": 1,
+    "dias_si_despues_del_corte": 2,
+    "dias_sin_entrega": ["domingo"],
+    "festivos": [
+      "2026-11-02", "2026-11-16", "2026-12-08", "2026-12-25",
+      "2027-01-01", "2027-01-11"
+    ]
+  },
+  "productos": [
+    {"producto": "Espinaca baby", "unidad": "bolsa 250 g", "precio": 9500},
+    {"producto": "Rúgula", "unidad": "bolsa 250 g", "precio": 9000},
+    {"producto": "Mezcla de lechugas", "unidad": "bolsa 500 g", "precio": 12000},
+    {"producto": "Kale", "unidad": "bolsa 250 g", "precio": 10500},
+    {"producto": "Albahaca", "unidad": "atado 100 g", "precio": 6000},
+    {"producto": "Cilantro", "unidad": "atado 100 g", "precio": 3500},
+    {"producto": "Tomate cherry", "unidad": "canastilla 500 g", "precio": 11000},
+    {"producto": "Microgreens", "unidad": "caja 100 g", "precio": 15000}
+  ]
+}

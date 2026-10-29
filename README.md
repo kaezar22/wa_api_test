@@ -41,3 +41,12 @@ Prueba: http://localhost:5000/welcome
 ## Probar sin WhatsApp
 
 Enviar `TextModel.json` o `ButtonModel.json` como body (POST, JSON) a `/whatsapp`.
+
+## Chatbot de ventas con DeepSeek (prueba)
+
+- `chatbot.py`: asistente de ventas. Responde precios y fecha estimada de entrega usando `catalogo.json`.
+- Los totales y fechas los calcula Python (función `cotizar_pedido`), el modelo solo conversa.
+- `catalogo.json`: productos, precios, pedido mínimo, domicilio y reglas de entrega (**datos de ejemplo**).
+- Variables: `DEEPSEEK_API_KEY` (obligatoria para activar el chatbot), `DEEPSEEK_MODEL` (opcional, `deepseek-chat`).
+- Sin `DEEPSEEK_API_KEY` el bot sigue en modo eco ("El usuario dijo: ...").
+- La memoria de la conversación es temporal (se pierde si el servidor se reinicia o tras 2 h sin mensajes).
